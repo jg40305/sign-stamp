@@ -1,0 +1,19 @@
+[project]
+name = "pdf-input-image"
+version = "0.1.0"
+description = "PDF 蓋章工具：拖曳式章印嵌入 PDF"
+requires-python = ">=3.9"
+dependencies = [
+    "Pillow>=12.2.0",
+    "PyMuPDF>=1.27.2",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+tag_format = "v$version"
+version_files = [
+    "pyproject.toml:version"
+]
+update_changelog_on_bump = true
+changelog_file = "CHANGELOG.md"
